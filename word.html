@@ -1,0 +1,139 @@
+<!-- Basic Styling -->
+<style>
+  .section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+
+  .hero {
+    background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+  }
+
+  .cta-button {
+    margin-top: 20px;
+    background: #0073aa;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  .services, .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .service-box, .testimonial-box {
+    flex: 1 1 300px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    background: white;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+
+  .contact-form button {
+    background: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2em;
+    }
+
+    .services, .testimonials {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero section">
+  <h1>Dinesh Banoth</h1>
+  <p>Digital Business Consultant</p>
+  <a href="#contact" class="cta-button">Get In Touch</a>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>I’m a seasoned digital business consultant with over 8 years of experience helping brands transform their online presence, streamline their operations, and scale through smart digital strategies. I work with startups, entrepreneurs, and mid-sized businesses to create scalable digital systems, performance marketing strategies, and business automation plans.</p>
+</section>
+
+<!-- Services Section -->
+<section class="section" id="services">
+  <h2>My Services</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3><i class="fa fa-lightbulb"></i> Business Strategy</h3>
+      <p>Crafting a digital roadmap that aligns with your business vision, goals, and market dynamics.</p>
+    </div>
+    <div class="service-box">
+      <h3><i class="fa fa-cogs"></i> Digital Transformation</h3>
+      <p>Helping your organization adopt the latest digital tools and systems for efficiency and scale.</p>
+    </div>
+    <div class="service-box">
+      <h3><i class="fa fa-chart-line"></i> Marketing Optimization</h3>
+      <p>Performance-based marketing plans designed to drive traffic, leads, and conversions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section" id="testimonials">
+  <h2>Client Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial-box">
+      <p>“Jane helped us increase our monthly sales by 40% within just 3 months. She’s a brilliant strategist.”</p>
+      <strong>- Rahul Mehta, CEO, StartupX</strong>
+    </div>
+    <div class="testimonial-box">
+      <p>“Her insights on process automation saved us time and reduced costs. Highly recommend her consulting!”</p>
+      <strong>- Priya Anand, Director, Innovate Labs</strong>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required/>
+    <input type="email" name="email" placeholder="Your Email" required/>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Font Awesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
